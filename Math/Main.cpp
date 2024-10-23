@@ -48,6 +48,14 @@ case 8:
 case 9:
 
     break;
+case 10:
+    takeOne();
+    result=root(x,2);
+    break;
+case 11:
+    takeTwo();
+    result=root(x,y);
+    break;
 default:
     break;
 }
