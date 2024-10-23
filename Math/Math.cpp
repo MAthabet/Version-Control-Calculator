@@ -8,14 +8,6 @@ float abs(float x)
 	return -x;
 }
 
-float add(float x, float y){
-return x+y;
-}
-
-float sub(float x, float y){
-return x-y;
-}
-
 int remind(int x, int y){
 
 	return x%y;
@@ -40,11 +32,6 @@ int factorial(int a)
 float ln(float a)
 {
 
-}
-
-float log(float a, float b)
-{
-	
 }
 
 int pow(int a, int b)
