@@ -45,7 +45,7 @@ float ln(float a)
 
 float log(float a, float b)
 {
-	
+	return ln(a)/ln(b);
 }
 
 float pow(float a, float b)
