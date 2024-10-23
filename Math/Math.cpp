@@ -31,7 +31,12 @@ float exp(float a)
 		result += pow(x, i) / factorial(i);
 	}
 }
-
+int factorial(int a)
+{
+	if (a == 0 || a == 1)
+        return 1;
+    return a * factorial(a - 1);
+}
 float ln(float a)
 {
 
@@ -42,7 +47,7 @@ float log(float a, float b)
 	
 }
 
-float pow(float a, float b)
+int pow(int a, int b)
 {
 	for(int i=0;i<b;i++){
 		a*=a;
@@ -50,7 +55,16 @@ float pow(float a, float b)
 	return a;
 }
 
-int main()
+float root(float a, float b)
 {
-	printf("%f",abs(-5.2));
+	int x = a/b;
+	int i = 0;
+	int prevx = 0;
+	while(1)
+	{
+		x= (1/b)*((b-1)*x+a/pow(x,b-1));
+		if(abs(x-prevx)<0.00001) break;
+		prevx = x;
+	}
+	return x;
 }
