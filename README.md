@@ -1,2 +1,5 @@
 # Version-Control-Calculator
-ITI Task 
+
+Mohamed Alaa
+Mohamed Ahmed Saad
+Mohamed Magdy Mohamed
