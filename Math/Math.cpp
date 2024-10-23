@@ -28,7 +28,7 @@ float exp(float a)
 	float result;
 	for (int i = 0; i <= 100; i++)
 	{
-
+		result += pow(x, i) / factorial(i);
 	}
 }
 
