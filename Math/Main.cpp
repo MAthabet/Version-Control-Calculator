@@ -47,7 +47,8 @@ case 9:
 
     break;
 case 10:
-    ta
+    takeOne();
+    result=root(x,2);
     break;
 case 11:
     takeTwo();
