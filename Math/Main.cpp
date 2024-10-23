@@ -1,25 +1,23 @@
 #include<iostream>
-#include <stdio.h>
 #include "Math.cpp"
 using namespace std;
 int operationNum , x,y ;
-float result=0;
 int main(){
-
 cout<<"\nWelcome to Our Calculator .... \n\n\n";
-
-cout<<"Please your Operation Symbol.... \n";
-cout<<"1 To Addition\n2 To Substract\n3 To Power\n4 Factorial\n5 Exponintial\n6 Absluate\n7 Reminder\n8 Log\n9 Ln\n";
+cout<<"------------------------------------------";
+cout<<"Select your Operation.... \n";
+cout<<"1- Addition\n2- Substraction\n3- Multiblication\n4- Division\n5- Absolute\n6- Power";
+cout << "\n7- exponential \n8- factorial\n9- ln\n10- Square Root\n11-Root\nAC";
 cin>>operationNum;
-cout<<"Please First Number.... \n";
-cin>>x;
-cout<<"Please Secound Number.... \n";
-cin>>y;
+
 switch (operationNum)
 {
 case 1:    
-    result=add(x,y);
-    cout<<"Result = "<<result;
+    cout<<"Enter first Number";
+    cin>>x;
+    cout<<"Enter Second Number";
+    cin>>y;
+    cout<<"Result = "<<x+y;
     break;
 case 2:
     result=sub(x,y);
@@ -51,6 +49,4 @@ case 9:
 default:
     break;
 }
-
-
 }
