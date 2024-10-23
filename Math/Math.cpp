@@ -50,10 +50,7 @@ float log(float a, float b)
 
 float pow(float a, float b)
 {
-	for(int i=0;i<b;i++){
-		a*=a;
-	}
-	return a;
+	return exp(b*ln(a));
 }
 
 int main()
