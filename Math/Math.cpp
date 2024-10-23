@@ -20,8 +20,9 @@ float exp(float a)
 	float result;
 	for (int i = 0; i <= 100; i++)
 	{
-		result += pow(x, i) / factorial(i);
+		result += pow(a, i) / factorial(i);
 	}
+	return result;
 }
 int factorial(int a)
 {
@@ -31,15 +32,22 @@ int factorial(int a)
 }
 float ln(float a)
 {
-
+	float result;
+	for(int i=1; i <= 100; i++)
+	{
+		result += ((1 - i % 2) - (i % 2)) * pow(x - 1, i) / i;
+	}
+	return result;
 }
 
-int pow(int a, int b)
+float log(float a, float b)
 {
-	for(int i=0;i<b;i++){
-		a*=a;
-	}
-	return a;
+	return ln(a)/ln(b);
+}
+
+float pow(float a, float b)
+{
+	return exp(b*ln(a));
 }
 
 float root(float a, float b)
