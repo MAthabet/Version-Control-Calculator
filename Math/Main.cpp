@@ -47,11 +47,11 @@ case 9:
 
     break;
 case 10:
+    ta
     break;
 case 11:
     takeTwo();
     result=root(x,y);
-    cout<<"Result = "<<result;
     break;
 default:
     break;
