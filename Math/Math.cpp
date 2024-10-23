@@ -30,11 +30,17 @@ float exp(float a)
 	{
 		result += pow(x, i) / factorial(i);
 	}
+	return result;
 }
 
 float ln(float a)
 {
-
+	float result
+	for(int i=1; i <= 100; i++)
+	{
+		result += ((1 - i % 2) - (i % 2)) * pow(x - 1, i) / i;
+	}
+	return result;
 }
 
 float log(float a, float b)
