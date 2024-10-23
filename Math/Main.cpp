@@ -43,10 +43,12 @@ case 7:
     result=remind(x,y);
     break;
 case 8:
-
+    takeOne();
+    result=factorial(x);
     break;
 case 9:
-
+    takeOne();
+    result=ln(x);
     break;
 case 10:
     takeOne();
