@@ -46,6 +46,13 @@ case 8:
 case 9:
 
     break;
+case 10:
+    break;
+case 11:
+    takeTwo();
+    result=root(x,y);
+    cout<<"Result = "<<result;
+    break;
 default:
     break;
 }
