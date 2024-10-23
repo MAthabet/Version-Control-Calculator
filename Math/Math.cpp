@@ -8,6 +8,21 @@ float abs(float x)
 	return -x;
 }
 
+float add(float x, float y){
+return x+y;
+}
+
+float sub(float x, float y){
+return x-y;
+}
+
+int remind(int x, int y){
+
+	return x%y;
+
+}
+
+
 float exp(float a)
 {
 	float result;
@@ -24,12 +39,15 @@ float ln(float a)
 
 float log(float a, float b)
 {
-
+	
 }
 
 float pow(float a, float b)
 {
-
+	for(int i=0;i<b;i++){
+		a*=a;
+	}
+	return a;
 }
 
 int main()
