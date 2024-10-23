@@ -53,7 +53,3 @@ float pow(float a, float b)
 	return exp(b*ln(a));
 }
 
-int main()
-{
-	printf("%f",abs(-5.2));
-}
