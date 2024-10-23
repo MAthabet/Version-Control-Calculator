@@ -2,7 +2,6 @@
 #include "Math.cpp"
 using namespace std;
 int operationNum , x,y ;
-float result=0;
 int main(){
 cout<<"\nWelcome to Our Calculator .... \n\n\n";
 cout<<"------------------------------------------";
@@ -16,9 +15,9 @@ switch (operationNum)
 case 1:    
     cout<<"Enter first Number";
     cin>>x;
-    Cout<<"Enter Second Number";
+    cout<<"Enter Second Number";
     cin>>y;
-    cout<<"Result = "<<result;
+    cout<<"Result = "<<x+y;
     break;
 case 2:
     result=sub(x,y);
