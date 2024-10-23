@@ -2,6 +2,9 @@
 #include "Math.cpp"
 using namespace std;
 int operationNum , x,y ;
+int result;
+void takeTwo();
+void takeOne();
 int main(){
 cout<<"\nWelcome to Our Calculator .... \n\n\n";
 cout<<"------------------------------------------";
@@ -13,32 +16,31 @@ cin>>operationNum;
 switch (operationNum)
 {
 case 1:    
-    cout<<"Enter first Number";
-    cin>>x;
-    cout<<"Enter Second Number";
-    cin>>y;
-    cout<<"Result = "<<x+y;
+    takeTwo();
+    result = x+y;
     break;
 case 2:
-    result=sub(x,y);
-    cout<<"Result = "<<result;
+    takeTwo();
+    result=x-y;
     break;
 case 3:
-    result=pow(x,y);
-    cout<<"Result = "<<result;
+    takeTwo();
+    result = x*y;
     break;
 case 4:
-   
+   takeTwo();
+   result = x/y;
     break;
 case 5:
-
+    takeOne();
+    result = abs(x);
     break;
 case 6:
-
+    takeTwo();
+    result = pow(x,y);
     break;
 case 7:
     result=remind(x,y);
-    cout<<"Result = "<<result;
     break;
 case 8:
 
@@ -46,14 +48,20 @@ case 8:
 case 9:
 
     break;
-case 10:
-    ta
-    break;
-case 11:
-    takeTwo();
-    result=root(x,y);
-    break;
 default:
     break;
 }
+cout<<"Result = "<<result;
+}
+
+void takeTwo(){
+    cout<<"Enter first Number";
+    cin>>x;
+    cout<<"Enter Second Number";
+    cin>>y;
+}
+
+void takeOne(){
+    cout<<"Enter A Number";
+    cin>>x;
 }
