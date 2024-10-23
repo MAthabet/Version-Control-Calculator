@@ -1,5 +1,4 @@
 #include<iostream>
-#include <stdio.h>
 #include "Math.cpp"
 using namespace std;
 int operationNum , x,y ;
@@ -15,7 +14,10 @@ cin>>operationNum;
 switch (operationNum)
 {
 case 1:    
-    result = ;
+    cout<<"Enter first Number";
+    cin>>x;
+    Cout<<"Enter Second Number";
+    cin>>y;
     cout<<"Result = "<<result;
     break;
 case 2:
