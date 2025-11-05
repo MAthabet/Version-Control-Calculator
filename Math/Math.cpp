@@ -1,6 +1,10 @@
-#include <stdio.h>
 
 #define e 2.718281828459045
+
+float pow(float a, float b);
+float ln(float a);
+float exp(float a);
+int factorial(int a);
 
 float abs(float x)
 {
@@ -15,9 +19,14 @@ int remind(int x, int y){
 }
 
 
+float pow(float a, float b)
+{
+	return exp(b * ln(a));
+}
+
 float exp(float a)
 {
-	float result;
+	float result = 0;
 	for (int i = 0; i <= 100; i++)
 	{
 		result += pow(a, i) / factorial(i);
@@ -32,10 +41,10 @@ int factorial(int a)
 }
 float ln(float a)
 {
-	float result;
+	float result = 0;
 	for(int i=1; i <= 100; i++)
 	{
-		result += ((1 - i % 2) - (i % 2)) * pow(x - 1, i) / i;
+		result += ((1 - i % 2) - (i % 2)) * pow(a - 1, i) / i;
 	}
 	return result;
 }
@@ -45,10 +54,6 @@ float log(float a, float b)
 	return ln(a)/ln(b);
 }
 
-float pow(float a, float b)
-{
-	return exp(b*ln(a));
-}
 
 float root(float a, float b)
 {
